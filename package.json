@@ -6,22 +6,35 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "generate": "graphql-codegen --config codegen.yml",
+    "check-outdated": "npm-check-updates",
+    "upgrade-outdated": "npm-check-updates -u"
   },
   "dependencies": {
+    "@apollo/client": "^3.4.17",
     "@emotion/react": "^11.5.0",
     "@emotion/styled": "^11.3.0",
-    "@mui/icons-material": "^5.0.5",
-    "@mui/material": "^5.0.6",
-    "next": "12.0.1",
+    "@material-ui/core": "^4.12.3",
+    "@mui/icons-material": "^5.1.0",
+    "@mui/material": "^5.1.0",
+    "@mui/x-data-grid": "^5.0.0-beta.7",
+    "apollo3-cache-persist": "^0.13.0",
+    "graphql": "^16.0.1",
+    "next": "12.0.3",
     "react": "17.0.2",
     "react-dom": "17.0.2"
   },
   "devDependencies": {
-    "@types/node": "16.11.6",
-    "@types/react": "17.0.33",
-    "eslint": "7",
-    "eslint-config-next": "12.0.1",
+    "@graphql-codegen/cli": "2.2.2",
+    "@graphql-codegen/typescript": "2.3.1",
+    "@graphql-codegen/typescript-operations": "^2.2.0",
+    "@graphql-codegen/typescript-react-apollo": "^3.2.1",
+    "@types/node": "16.11.7",
+    "@types/react": "17.0.34",
+    "eslint": "8",
+    "eslint-config-next": "12.0.3",
+    "npm-check-updates": "^12.0.2",
     "typescript": "4.4.4"
   }
 }
